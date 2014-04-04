@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.timeline;
+package com.tavares.timelineseekbar;
 
 public final class R {
     public static final class attr {
@@ -18,17 +18,39 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int bars_time_positions=0x7f010000;
     }
+    public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+         */
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+    }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int seekBar=0x7f060000;
+        public static final int action_settings=0x7f080005;
+        public static final int container=0x7f080000;
+        public static final int seekBar1=0x7f080002;
+        public static final int textView1=0x7f080001;
+        public static final int textView2=0x7f080003;
+        public static final int timelineSeekBar1=0x7f080004;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int activity_main=0x7f030000;
+        public static final int fragment_main=0x7f030001;
+    }
+    public static final class menu {
+        public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
+        public static final int action_settings=0x7f050002;
+        public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050001;
     }
     public static final class style {
         /** 
@@ -52,11 +74,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a TimelineSeekBar.
@@ -65,8 +87,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TimelineSeekBar_bars_drawable com.timeline:bars_drawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TimelineSeekBar_bars_time_positions com.timeline:bars_time_positions}</code></td><td></td></tr>
+           <tr><td><code>{@link #TimelineSeekBar_bars_drawable com.tavares.timelineseekbar:bars_drawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TimelineSeekBar_bars_time_positions com.tavares.timelineseekbar:bars_time_positions}</code></td><td></td></tr>
            </table>
            @see #TimelineSeekBar_bars_drawable
            @see #TimelineSeekBar_bars_time_positions
@@ -75,23 +97,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010000, 0x7f010001
         };
         /**
-          <p>This symbol is the offset where the {@link com.timeline.R.attr#bars_drawable}
+          <p>This symbol is the offset where the {@link com.tavares.timelineseekbar.R.attr#bars_drawable}
           attribute's value can be found in the {@link #TimelineSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.timeline:bars_drawable
+          @attr name com.tavares.timelineseekbar:bars_drawable
         */
         public static final int TimelineSeekBar_bars_drawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.timeline.R.attr#bars_time_positions}
+          <p>This symbol is the offset where the {@link com.tavares.timelineseekbar.R.attr#bars_time_positions}
           attribute's value can be found in the {@link #TimelineSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.timeline:bars_time_positions
+          @attr name com.tavares.timelineseekbar:bars_time_positions
         */
         public static final int TimelineSeekBar_bars_time_positions = 0;
     };

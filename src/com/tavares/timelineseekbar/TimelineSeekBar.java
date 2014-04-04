@@ -1,4 +1,4 @@
-package com.timeline;
+package com.tavares.timelineseekbar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -54,6 +54,8 @@ public class TimelineSeekBar extends SeekBar {
         if (0 != dotDrawableId) {
             mDotBitmap = BitmapFactory.decodeResource(getResources(), dotDrawableId);
         }
+        
+        attrsArray.recycle();
     }
 
     /**
